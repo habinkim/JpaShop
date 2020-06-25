@@ -1,0 +1,42 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_server-1720c58ae86-48f91c2dea37c748": {
+			"provider": "generic",
+			"driver": "h2_server",
+			"name": "H2 Server - jpashop",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost/~",
+				"database": "jpashop",
+				"url": "jdbc:h2:tcp://localhost/~/jpashop",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"h2_server-1720c58ae86-48f91c2dea37c748": {
+			"PUBLIC": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "<diagram version=\"1\" name=\"PUBLIC\" time=\"202005131345\"><entities><data-source id=\"h2_server-1720c58ae86-48f91c2dea37c748\"><entity id=\"1\" name=\"CATEGORY\" fq-name=\"PUBLIC.CATEGORY\" order=\"0\" x=\"186\" y=\"20\"><path name=\"PUBLIC\"/></entity><entity id=\"2\" name=\"CATEGORY_ITEM\" fq-name=\"PUBLIC.CATEGORY_ITEM\" order=\"1\" x=\"20\" y=\"124\"><path name=\"PUBLIC\"/></entity><entity id=\"3\" name=\"DELIVERY\" fq-name=\"PUBLIC.DELIVERY\" order=\"2\" border-width=\"3\" x=\"452\" y=\"123\"><path name=\"PUBLIC\"/></entity><entity id=\"4\" name=\"ITEM\" fq-name=\"PUBLIC.ITEM\" order=\"3\" x=\"186\" y=\"143\"><path name=\"PUBLIC\"/></entity><entity id=\"5\" name=\"MEMBER\" fq-name=\"PUBLIC.&quot;MEMBER&quot;\" order=\"4\" x=\"624\" y=\"266\"><path name=\"PUBLIC\"/></entity><entity id=\"6\" name=\"ORDERS\" fq-name=\"PUBLIC.ORDERS\" order=\"5\" x=\"186\" y=\"399\"><path name=\"PUBLIC\"/></entity><entity id=\"7\" name=\"ORDER_ITEM\" fq-name=\"PUBLIC.ORDER_ITEM\" order=\"6\" x=\"20\" y=\"295\"><path name=\"PUBLIC\"/></entity></data-source></entities><relations><relation name=\"FK2Y94SVPMQTTX80MSHYNY85WQR\" fq-name=\"PUBLIC.CATEGORY.FK2Y94SVPMQTTX80MSHYNY85WQR\" type=\"fk\" pk-ref=\"1\" fk-ref=\"1\"><bend type=\"rel\" x=\"328\" y=\"112\"/><bend type=\"rel\" x=\"243\" y=\"135\"/></relation><relation name=\"FKCQ2N0OPF5SHYH84EX1FHUKCBH\" fq-name=\"PUBLIC.CATEGORY_ITEM.FKCQ2N0OPF5SHYH84EX1FHUKCBH\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"FKTKRUR7WG4D8AX0PWGO0VMY20C\" fq-name=\"PUBLIC.ORDERS.FKTKRUR7WG4D8AX0PWGO0VMY20C\" type=\"fk\" pk-ref=\"3\" fk-ref=\"6\"/><relation name=\"FKU8B4LWQUTCDQ3363GF6MLUJQ\" fq-name=\"PUBLIC.CATEGORY_ITEM.FKU8B4LWQUTCDQ3363GF6MLUJQ\" type=\"fk\" pk-ref=\"4\" fk-ref=\"2\"/><relation name=\"FKIJA6HJJIIT8DPRNMVTVGDP6RU\" fq-name=\"PUBLIC.ORDER_ITEM.FKIJA6HJJIIT8DPRNMVTVGDP6RU\" type=\"fk\" pk-ref=\"4\" fk-ref=\"7\"/><relation name=\"FKPKTXWHJ3X9M4GTH5FF6BKQGEB\" fq-name=\"PUBLIC.ORDERS.FKPKTXWHJ3X9M4GTH5FF6BKQGEB\" type=\"fk\" pk-ref=\"5\" fk-ref=\"6\"/><relation name=\"FKT4DC2R9NBVBUJRLJV3E23IIBT\" fq-name=\"PUBLIC.ORDER_ITEM.FKT4DC2R9NBVBUJRLJV3E23IIBT\" type=\"fk\" pk-ref=\"6\" fk-ref=\"7\"/></relations></diagram>"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
